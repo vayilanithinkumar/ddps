@@ -3,7 +3,7 @@ import pickle
 from streamlit_option_menu import option_menu
 
 
-loaded_model= pickle.load(open(diabetes_model.sav','rb'))
+diabetes_model= pickle.load(open(diabetes_model.sav','rb'))
 
 input_data = [10,168,74,0,0,38,0.537,34]
 input_data_as_numpy_array = np.asarray(input_data)
@@ -25,10 +25,10 @@ else:
 
 
 
-loaded_model= pickle.load(open('diabetes_model.sav','rb'))
+diabetes_model= pickle.load(open('diabetes_model.sav','rb'))
 
 def diabetes_prediction(input_data):
-    input_data = [10,168,74,0,0,38,0.537,34]
+    input_data = []
     input_data_as_numpy_array = np.asarray(input_data)
 
     input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
