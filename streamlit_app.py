@@ -1,5 +1,6 @@
 import numpy as np
 import pickle
+from streamlit_option_menu import option_menu
 
 
 loaded_model= pickle.load(open(diabetes_model.sav','rb'))
@@ -22,9 +23,7 @@ else:
 
 
 
-import numpy as np
-import pickle
-import streamlit as st
+
 
 loaded_model= pickle.load(open('diabetes_model.sav','rb'))
 
